@@ -2,7 +2,7 @@ import re
 import spacy
 import nltk
 
-spc_pt = spacy.load('pt_core_news_lg')
+spc_pt = spacy.load('pt_core_news_sm')
 
 def clean(text):
     # Remover caracteres que não são letras e tokenização
