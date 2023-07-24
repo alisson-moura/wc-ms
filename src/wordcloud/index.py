@@ -22,4 +22,5 @@ def generate_wordcloud_json(data):
     else:
         return(words)
     
+    words.sort(key=lambda x: x['total'], reverse=True)
     return(words[:50])
