@@ -13,7 +13,7 @@ schema = {
                 "type": "object",
                 "properties": {
                     "feedback": {"type": "string"},
-                    "score": {"type": "number"}
+                    "score": {"type": "string"}
                 },
                 "required": ["feedback", "score"]
             }
