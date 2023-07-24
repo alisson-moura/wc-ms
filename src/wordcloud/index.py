@@ -1,5 +1,5 @@
-from utils.nps_classifier import nps
-from utils.clean_text import clean
+from src.utils.nps_classifier import nps
+from src.utils.clean_text import clean
 
 def generate_wordcloud_json(data):
     words = []

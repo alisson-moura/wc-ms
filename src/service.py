@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_expects_json import expects_json
-
-from wordcloud.index import generate_wordcloud_json
+from src.wordcloud.index import generate_wordcloud_json
 
 app = Flask(__name__)
 
@@ -33,7 +32,3 @@ def generate():
     except Exception as e:
         print(e)
         return {"error": "An error occurred" }, 500
-
-
-if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0")
